@@ -14,42 +14,37 @@ mvn spring-boot:run
 ```
 
 ## API Reference
-### User
+### Create a new user
 
-#### Create
-Create a new user
-##### Method
+#### Method
 POST - http://localhost:8080/user
-##### Parameters
+#### Parameters
 * username - The user's unique username
 * name - The user's name
 * email - The user's email
-##### Returns
+#### Returns
 The created user
 
-#### Read
-Get an existing user
-##### Method
+### Get an existing user
+#### Method
 GET - http://localhost:8080/user/{username}
-##### Parameters
+#### Parameters
 * username - The user's unique username
-##### Returns
+#### Returns
 The user whose username matches the one provided
 
-#### Update
-Update the name or email of an existing user
-##### Method
+### Update the name or email of an existing user
+#### Method
 PUT - http://localhost:8080/user/{username}
-##### Parameters
+#### Parameters
 * username - The user's unique username
-##### Returns
+#### Returns
 The updated user
 
-#### Delete
-Delete an existing user
-##### Method
+### Delete an existing user
+#### Method
 DELETE - http://localhost:8080/user/{username}
-##### Parameters
+#### Parameters
 * username - The user's unique username
-##### Returns
+#### Returns
 The deleted user
