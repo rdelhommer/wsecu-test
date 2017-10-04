@@ -2,7 +2,8 @@
 WSECU Programming Test
 
 # Usage
-Run the following command from the wsecu-test directory
 ```sh
+git clone https://github.com/rdelhommer/wsecu-test
+cd wsecu-test
 mvn spring-boot:run
 ```
