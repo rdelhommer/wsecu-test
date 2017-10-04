@@ -32,6 +32,11 @@ public class User {
       throw new InvalidEmailException(trimmedEmail);
     }
 
+    /* NOTE:
+     * I didn't put any username or name validation because validation of those fields
+     * changes depending on the context that they're used in.
+     * Since I wasn't given a context, I just decided to not validate them.
+     */
     return new User(username.toLowerCase().trim(), name.trim(), trimmedEmail);
   }
 }
