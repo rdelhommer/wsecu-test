@@ -1,3 +1,14 @@
+# vscode
+.vscode
+
+# maven
+.classpath
+.project
+.settings
+
+# build
+target
+
 # Compiled class file
 *.class
 
