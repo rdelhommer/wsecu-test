@@ -27,10 +27,11 @@ public class User {
   }
 
   public static User CreateUser(String username, String name, String email) throws InvalidEmailException {
-    if (!EmailValidator.getInstance().isValid(email)) {
-      throw new InvalidEmailException(email);
+    String trimmedEmail = email.trim();
+    if (!EmailValidator.getInstance().isValid(trimmedEmail)) {
+      throw new InvalidEmailException(trimmedEmail);
     }
 
-    return new User(username, name, email);
+    return new User(username.toLowerCase().trim(), name.trim(), trimmedEmail);
   }
 }
